@@ -1,5 +1,5 @@
 import { useCart } from "../context/CartContext.jsx";
-import { money, PLACEHOLDER } from "../data/products.js";
+import {  PLACEHOLDER } from "../data/products.js";
 
 export default function CartDrawer() {
   const { items, dispatch, total, open, setOpen } = useCart();
@@ -33,7 +33,7 @@ export default function CartDrawer() {
                   <img src={i.image || PLACEHOLDER} alt={i.name} className="h-16 w-14 rounded-xl bg-white/6 object-contain p-1" />
                   <div>
                     <b className="text-sm">{i.name}</b>
-                    <small className="block text-muted">{money(i.price)}</small>
+                    <small className="block text-muted">€{i.price}</small>
                     <div className="mt-1.5 inline-flex items-center gap-3 rounded-full bg-white/6 p-0.5">
                       <button onClick={() => dispatch({ type: "dec", id: i.id })} aria-label="Decrease" className="size-7 rounded-full bg-white/12 font-bold">−</button>
                       <span>{i.qty}</span>
@@ -47,9 +47,9 @@ export default function CartDrawer() {
             <div>
               <div className="my-3.5 flex items-center justify-between">
                 <span>Total</span>
-                <strong className="text-xl">{money(total)}</strong>
+                <strong className="text-xl">€{total}</strong>
               </div>
-              <button className="btn block w-full" onClick={() => alert("Checkout backend se connect karna baqi hai.")}>Checkout</button>
+              <button className="btn block w-full" >Checkout</button>
               <button onClick={() => dispatch({ type: "clear" })} className="mx-auto mt-3 block text-sm font-bold text-neon-cyan">Clear cart</button>
             </div>
           </>

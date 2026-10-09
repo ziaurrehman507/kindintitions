@@ -1,10 +1,10 @@
 export default function About() {
   return (
     <section className="mx-auto max-w-[1120px] px-4 py-7">
-      <h1 className="mb-4 text-4xl font-extrabold tracking-tighter">About Mobilix</h1>
+      <h1 className="mb-4 text-4xl font-extrabold tracking-tighter">About kindintitions</h1>
       <p className="mb-3.5 max-w-[60ch] text-lg font-semibold">We sell only original, sealed smartphones, with the warranty to prove it.</p>
       <p className="mb-3.5 max-w-[60ch] text-[#d9d8f5]">
-        Mobilix started as a small counter shop and grew into an online store because customers kept asking one thing: is it really original? Every phone we ship comes with its box seal, invoice and official warranty.
+        kindintitions started as a small counter shop and grew into an online store because customers kept asking one thing: is it really original? Every phone we ship comes with its box seal, invoice and official warranty.
       </p>
       <div className="my-6 grid max-w-xl grid-cols-3 gap-2.5">
         {[["15k+", "phones sold"], ["4.9", "customer rating"], ["48h", "delivery"]].map(([n, l]) => (
