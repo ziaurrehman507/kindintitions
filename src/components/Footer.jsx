@@ -21,6 +21,7 @@ export default function Footer() {
             <Link to="/contact" className="opacity-90">Contact</Link>
             <a href="tel:+920000000000" className="opacity-90">+351922038910</a>
             <a href="mailto:hello@mobilix.pk" className="opacity-90">Kindintentions.lda@gmail.com</a>
+            <a href="mailto:hello@mobilix.pk" className="opacity-90"> <span className="text-[white] font-bold " >Adress :</span> RUA COSTA PINTO, 209 LOJA 122645-185 ALCABIDECHE(CASCAIS)PORTUGAL</a>
           </div>
         </div>
         <div className="flex flex-wrap gap-2 md:col-span-2">
